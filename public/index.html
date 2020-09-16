@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Ciao, I'm Giovanni Benveniste.</h1>
+      <h2>I'm a junior frontend developer.</h2>
+      <div class="btn" dest="work">
+        <p>View my projects</p>
+        <img class="arrow" src="./img/icons/right-arrow.png" />
+      </div>
+      <p class="randomColor">
+        I couldn't choose a background colour so I made it random. If you don't
+        like it you can always <span id="changeColor">change it!</span>
+      </p>
+    </header>
+
+    <nav>
+      <div class="link-wrap">
+        <div class="page-link active" dest="home">Home</div>
+        <div class="page-link" dest="about">About</div>
+        <div class="page-link" dest="portfolio">Portfolio</div>
+        <div class="page-link" dest="contact">Contact</div>
+      </div>
+    </nav>
+
+    <section class="about">
+      <div class="title-section title-about">About</div>
+      <div class="title-bar bar-about"></div>
+      <div class="about-container">
+        <div class="left-side">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+            porro necessitatibus ipsa dolor harum iure, quae provident autem,
+            soluta culpa doloribus rem tempore! Placeat dolorum aliquam sint
+            eveniet, ad provident.
+          </p>
+        </div>
+        <div class="right-side">
+          <div class="folders-container">
+            <div class="folder-wrap">
+              <div class="folder">
+                <div class="inside-folder-wrap">
+                  <div class="element">
+                    <img src="./img/logos/html.png" alt="" />
+                  </div>
+                  <div class="element-name">HTML</div>
+                </div>
+                <div class="inside-folder-wrap">
+                  <div class="element">
+                    <img src="./img/logos/css.png" alt="" />
+                  </div>
+                  <div class="element-name">CSS</div>
+                </div>
+                <div class="inside-folder-wrap">
+                  <div class="element">
+                    <img src="./img/logos/js.png" alt="" />
+                  </div>
+                  <div class="element-name">Javascript</div>
+                </div>
+                <div class="inside-folder-wrap">
+                  <div class="element">
+                    <img src="./img/logos/800px-React-icon.svg.png" alt="" />
+                  </div>
+                  <div class="element-name">React</div>
+                </div>
+              </div>
+              <div class="folder-name">Coding Skills</div>
+            </div>
+            <div class="folder-wrap">
+              <div class="folder">
+                <div class="inside-folder-wrap">
+                  <div class="element">
+                    <img src="./img/logos/ps.png" alt="" />
+                  </div>
+                  <div class="element-name">Photoshop</div>
+                </div>
+                <div class="inside-folder-wrap">
+                  <div class="element">
+                    <img src="././img/logos/ai.png" alt="" />
+                  </div>
+                  <div class="element-name">Illustrator</div>
+                </div>
+                <div class="inside-folder-wrap">
+                  <div class="element">
+                    <img src="./img/logos/ae.png" alt="" />
+                  </div>
+                  <div class="element-name">After Effects</div>
+                </div>
+                <div class="inside-folder-wrap">
+                  <div class="element">
+                    <img src="./img/logos/inv.png" alt="" />
+                  </div>
+                  <div class="element-name">InVision Studio</div>
+                </div>
+              </div>
+              <div class="folder-name">Graphic Skills</div>
+            </div>
+            <div class="folder-wrap">
+              <div class="folder"></div>
+              <div class="folder-name">Prev Experience</div>
+            </div>
+            <div class="folder-wrap">
+              <div class="folder"></div>
+              <div class="folder-name">Passion</div>
+            </div>
+            <div class="folder-wrap">
+              <div class="folder"></div>
+              <div class="folder-name">The5Game</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="title-section title-projects">Projects</div>
+      <div class="title-bar bar-projects"></div>
+      <div class="projects-container">
+        <div class="portfolio-item-wrapper">
+          <div
+            class="portfolio-img-background"
+            style="background-image: url(img/portfolio1.jpg)"
+          ></div>
+
+          <a href="https://the5game-landing.web.app/">
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img
+                  id="logo-img-the5game"
+                  src="img/logos/the5game.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="subtitle">
+                Landing page of the sports fantasy platform I'm building.
+                <br />
+                Created with HTML, CSS and JS.
+              </div>
+            </div>
+          </a>
+
+          <div class="github-link">
+            <a href="https://github.com/tannib/five-landingpage">
+              <img class="github-logo" src="img/logos/github.png" />
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div
+            class="portfolio-img-background"
+            style="background-image: url(img/portfolio2.jpg)"
+          ></div>
+
+          <a href="https://www.google.com/">
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img id="logo-img-natours" src="img/logos/natours.png" alt="" />
+              </div>
+
+              <div class="subtitle">
+                Landing page project of an advanced CSS and SASS course.
+              </div>
+            </div>
+          </a>
+
+          <div class="github-link">
+            <a href="https://www.github.com/">
+              <img class="github-logo" src="img/logos/github.png" />
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div
+            class="portfolio-img-background"
+            style="background-image: url(img/portfolio3.jpg)"
+          ></div>
+
+          <a href="https://js-projects-6b306.web.app/">
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img id="logo-img-js" src="img/logos/javascript.png" alt="" />
+              </div>
+
+              <div class="subtitle">A series of 20 small ES6 projects.</div>
+            </div>
+          </a>
+
+          <div class="github-link">
+            <a href="https://github.com/tannib/js_projects">
+              <img class="github-logo" src="img/logos/github.png" />
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div
+            class="portfolio-img-background"
+            style="background-image: url(img/portfolio4.jpg)"
+          ></div>
+
+          <a href="https://www.google.com/">
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img id="logo-img-netflix" src="img/logos/netflix.png" alt="" />
+              </div>
+
+              <div class="subtitle">
+                Netflix clone made with React and TheMovieDB apis.
+              </div>
+            </div>
+          </a>
+
+          <div class="github-link">
+            <a href="https://www.github.com/">
+              <img class="github-logo" src="img/logos/github.png" />
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div
+            class="portfolio-img-background"
+            style="background-image: url(img/portfolio5.jpg)"
+          ></div>
+
+          <a href="https://airbnb-clone-36bd7.web.app/">
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img id="logo-img-airbnb" src="img/logos/airbnb.png" alt="" />
+              </div>
+
+              <div class="subtitle">
+                Airbnb clone made with React and React Router.
+              </div>
+            </div>
+          </a>
+
+          <div class="github-link">
+            <a href="https://github.com/tannib/airbnb-clone">
+              <img class="github-logo" src="img/logos/github.png" />
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div
+            class="portfolio-img-background"
+            style="background-image: url(img/portfolio6.jpg)"
+          ></div>
+
+          <a href="https://clone-16114.web.app/">
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img id="logo-img-whatsapp" src="img/logos/amazon.png" alt="" />
+              </div>
+
+              <div class="subtitle">
+                Amazon clone made with React and React Context Api.
+              </div>
+            </div>
+          </a>
+
+          <div class="github-link">
+            <a href="https://www.github.com/">
+              <img class="github-logo" src="img/logos/github.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

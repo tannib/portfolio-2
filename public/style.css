@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+/* ----- General ------- */
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.title-section {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.title-bar {
+  height: 4px;
+  margin: 15px 0 50px 0;
+  width: 70px;
+}
+
+/* ----- General ------- */
+
+/* ----- Header ------- */
+
+header {
+  background: #252934;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  font-size: 42px;
+  margin: 0;
+}
+
+.btn {
+  border: 2px solid #fff;
+  cursor: pointer;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s;
+  margin-top: 20px;
+}
+
+.arrow {
+  width: 17px;
+  height: 17px;
+  margin-left: 10px;
+  transition: all 0.3s;
+}
+
+.btn p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #04c2c9;
+  border-color: #04c2c9;
+}
+
+.btn:hover .arrow {
+  transform: rotate(90deg);
+}
+
+.randomColor {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.randomColor span {
+  cursor: pointer;
+  font-weight: 600;
+  border: 1px solid #fff;
+  padding: 6px 8px;
+  border-radius: 7px;
+  margin-left: 2px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ----- Header ------- */
+
+/* ----- Nav ------- */
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #1b242f;
+  border-bottom: 3px solid #04c2c9;
+  height: 50px;
+  text-align: left;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+}
+
+.link-wrap {
+  display: flex;
+  padding-left: 30px;
+}
+
+.page-link {
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+
+.link-wrap .active {
+  color: #e31b6d;
+}
+
+.page-link:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* ----- Nav ------- */
+
+/* ----- About ------- */
+.about {
+  background-color: #fff;
+  color: #616161;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.about .title-section,
+.about .title-bar {
+  color: #444649;
+}
+
+.about-container {
+  /* padding: 10px; */
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+}
+
+.left-side {
+  /* background-color: red; */
+  padding: 30px;
+  margin-left: 20px;
+}
+
+.right-side {
+  /* background-color: blue; */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.folders-container {
+  background-color: #252934;
+  border: 10px solid #16181d;
+  border-radius: 10px;
+  width: 398px;
+  height: 480px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+.folders-container-open-folder {
+  background-color: #252934;
+  border: 10px solid #16181d;
+  border-radius: 10px;
+  width: 398px;
+  height: 480px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.folder-wrap {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.folder-wrap-open-folder {
+  margin: 10px;
+  margin-left: 40px;
+  height: 90%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.folder {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.folder-open-folder {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  transition: all 0.3s;
+  position: absolute;
+  bottom: 0;
+  cursor: default;
+}
+
+.other-folders-open-folder {
+  display: none;
+}
+
+.folder:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: scale(1.06);
+}
+
+.folder-name {
+  font-size: 15px;
+  margin-top: 3px;
+  color: rgb(199, 199, 199);
+  cursor: pointer;
+}
+
+.folder-name-open-folder {
+  position: absolute;
+  top: 15px;
+  font-size: 27px;
+  color: #fff;
+  cursor: default;
+}
+
+.folder-name-hover {
+  color: #fff;
+}
+
+.inside-folder-wrap {
+  margin: 2px;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.element img {
+  width: 100%;
+}
+
+.element-name {
+  display: none;
+}
+
+.element-name-open-folder {
+  display: inline-block;
+  color: #fff;
+}
+
+/* ----- About ------- */
+
+/* ----- Projects ------- */
+
+.projects {
+  background-color: #313131;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 10px 160px 10px;
+}
+
+.projects .title-section,
+.projects .title-bar {
+  color: #fff;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 50px;
+  height: 100%;
+  width: 80%;
+  /* min-height: 500px; */
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.portfolio-item-wrapper:hover .portfolio-img-background {
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+.portfolio-img-background {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 75%;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 0 60px;
+}
+
+.logo-wrapper img {
+  width: 45%;
+  margin: 10px 0;
+}
+
+#logo-img-js {
+  width: 30%;
+}
+
+#logo-img-natours {
+  width: 40%;
+}
+
+#logo-img-whatsapp {
+  width: 30%;
+}
+
+#logo-img-airbnb {
+  width: 55%;
+}
+
+.github-logo {
+  height: 50px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.portfolio-item-wrapper:hover .github-logo {
+  opacity: 1;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: lightseagreen;
+  position: absolute;
+  bottom: 20px;
+  padding: 20px 80px;
+  opacity: 0;
+}
+
+.portfolio-item-wrapper:hover .subtitle {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.img-darken {
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+/* ----- Projects ------- */
