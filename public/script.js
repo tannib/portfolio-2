@@ -1,3 +1,5 @@
+// --------- HEADER ----------------
+
 const header = document.querySelector("header");
 
 const randomNumber1 = Math.floor(Math.random() * 256);
@@ -15,6 +17,48 @@ changeColor.addEventListener("click", () => {
   const newRandomNumber3 = Math.floor(Math.random() * 256);
   header.style.background = `rgba(${newRandomNumber1},${newRandomNumber2},${newRandomNumber3})`;
 });
+
+const headerBtn = document.getElementById("headerBtn");
+headerBtn.addEventListener("click", () => portfolioSection.scrollIntoView());
+
+// --------- HEADER ----------------
+
+// --------- NAV ----------------
+
+const homeBtn = document.getElementById("homeBtn");
+const aboutBtn = document.getElementById("aboutBtn");
+const portfolioBtn = document.getElementById("portfolioBtn");
+const contactBtn = document.getElementById("contactBtn");
+const homeSection = document.getElementById("home");
+const aboutSection = document.getElementById("about");
+const portfolioSection = document.getElementById("portfolio");
+// const contactSection = document.getElementById("contact");
+
+homeBtn.addEventListener("click", () => homeSection.scrollIntoView());
+aboutBtn.addEventListener("click", () => aboutSection.scrollIntoView());
+portfolioBtn.addEventListener("click", () => portfolioSection.scrollIntoView());
+
+// --------- NAV ----------------
+
+// --------- ABOUT ----------------
+
+// const containerImage = document.querySelector(".container-img");
+// const frontImage = document.querySelector(".about-img-front");
+// const retroImage = document.querySelector(".about-img-retro");
+// containerImage.addEventListener("mousemove", (e) => {
+//   const newY = e.offsetY / 10;
+//   const newX = e.offsetX / 10;
+
+//   if (e.offsetX > 350 && e.offsetX < 569) {
+//     frontImage.style.left = `${newX}%`;
+//   }
+//   if (e.offsetY > 150 && e.offsetY < 349) {
+//     frontImage.style.bottom = `${newY}px`;
+//   }
+
+//   // console.log(e.offsetX);
+//   console.log(e.offsetY);
+// });
 
 // Changing style to the folder name on hovering
 const folders = document.querySelectorAll(".folder");
@@ -157,3 +201,5 @@ document.addEventListener("click", (e) => {
   openFolder(e);
   closeFolder(e);
 });
+
+// --------- ABOUT ----------------

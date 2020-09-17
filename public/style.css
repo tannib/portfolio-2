@@ -10,6 +10,10 @@ body {
   font-weight: 300;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .title-section {
   text-transform: uppercase;
   font-size: 40px;
@@ -23,6 +27,11 @@ body {
   margin: 15px 0 50px 0;
   width: 70px;
 }
+
+/* header,
+section {
+  scroll-snap-align: start;
+} */
 
 /* ----- General ------- */
 
@@ -123,8 +132,11 @@ nav {
   cursor: pointer;
 }
 
-.link-wrap .active {
+.page-link:hover {
   color: #e31b6d;
+}
+
+.link-wrap .active {
 }
 
 .page-link:not(:last-child) {
@@ -152,13 +164,50 @@ nav {
 .about-container {
   /* padding: 10px; */
   display: grid;
-  grid-template-columns: 1.5fr 2fr;
+  grid-template-columns: 1.8fr 2fr;
 }
 
 .left-side {
   /* background-color: red; */
-  padding: 30px;
-  margin-left: 20px;
+  padding: 20px;
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-img {
+  position: relative;
+  /* background-color: blue; */
+  width: 100%;
+  height: 70%;
+}
+
+.container-img img {
+  /* width: 100%; */
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.about-img-front {
+  width: 370px;
+  left: 50%;
+  bottom: 20px;
+  z-index: 2;
+}
+
+.about-img-retro {
+  width: 212px;
+  left: 35%;
+  bottom: 80px;
+  z-index: 1;
+}
+
+.left-side p {
+  margin: 0;
+  padding-top: 20px;
+  text-align: justify;
 }
 
 .right-side {
@@ -219,6 +268,13 @@ nav {
   grid-template-columns: 1fr 1fr;
   transition: all 0.3s;
   cursor: pointer;
+}
+
+.folder-prev-exp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .folder-open-folder {
@@ -290,7 +346,7 @@ nav {
 /* ----- Projects ------- */
 
 .projects {
-  background-color: #313131;
+  background-color: #252934;
   height: 800px;
   display: flex;
   flex-direction: column;
@@ -309,7 +365,6 @@ nav {
   margin: 0 50px;
   height: 100%;
   width: 80%;
-  /* min-height: 500px; */
 }
 
 .portfolio-item-wrapper {

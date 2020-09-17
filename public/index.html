@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header id="home">
       <h1>Ciao, I'm Giovanni Benveniste.</h1>
       <h2>I'm a junior frontend developer.</h2>
-      <div class="btn" dest="work">
+      <div class="btn" id="headerBtn">
         <p>View my projects</p>
         <img class="arrow" src="./img/icons/right-arrow.png" />
       </div>
@@ -22,18 +22,22 @@
 
     <nav>
       <div class="link-wrap">
-        <div class="page-link active" dest="home">Home</div>
-        <div class="page-link" dest="about">About</div>
-        <div class="page-link" dest="portfolio">Portfolio</div>
-        <div class="page-link" dest="contact">Contact</div>
+        <div class="page-link" id="homeBtn">Home</div>
+        <div class="page-link" id="aboutBtn">About</div>
+        <div class="page-link" id="portfolioBtn">Portfolio</div>
+        <div class="page-link" id="contactBtn">Contact</div>
       </div>
     </nav>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="title-section title-about">About</div>
       <div class="title-bar bar-about"></div>
       <div class="about-container">
         <div class="left-side">
+          <div class="container-img">
+            <img src="./img/about-me.png" alt="" class="about-img-front" />
+            <img src="./img/about-window.png" alt="" class="about-img-retro" />
+          </div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
             porro necessitatibus ipsa dolor harum iure, quae provident autem,
@@ -102,7 +106,35 @@
               <div class="folder-name">Graphic Skills</div>
             </div>
             <div class="folder-wrap">
-              <div class="folder"></div>
+              <div class="folder">
+                <div class="inside-folder-wrap">
+                  <div class="element">
+                    <img src="./img/logos/uu-nba.png" alt="" />
+                  </div>
+                  <div class="element-name">
+                    Ultimo Uomo <br />
+                    Rivista Ufficiale NBA
+                  </div>
+                </div>
+                <div class="inside-folder-wrap">
+                  <div class="element">
+                    <img src="././img/logos/b&p.png" alt="" />
+                  </div>
+                  <div class="element-name">Barabino&Partners</div>
+                </div>
+                <div class="inside-folder-wrap">
+                  <div class="element">
+                    <img src="./img/logos/ba.png" alt="" />
+                  </div>
+                  <div class="element-name">Branchini Associati</div>
+                </div>
+                <div class="inside-folder-wrap">
+                  <div class="element">
+                    <img src="./img/logos/hellodi.png" alt="" />
+                  </div>
+                  <div class="element-name">Hellodi</div>
+                </div>
+              </div>
               <div class="folder-name">Prev Experience</div>
             </div>
             <div class="folder-wrap">
@@ -118,7 +150,7 @@
       </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="portfolio">
       <div class="title-section title-projects">Projects</div>
       <div class="title-bar bar-projects"></div>
       <div class="projects-container">
