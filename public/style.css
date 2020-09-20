@@ -270,13 +270,6 @@ nav {
   cursor: pointer;
 }
 
-.folder-prev-exp {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
-
 .folder-open-folder {
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
@@ -339,6 +332,15 @@ nav {
 .element-name-open-folder {
   display: inline-block;
   color: #fff;
+}
+
+.element-name-open-folder p {
+  margin: 0;
+  text-align: center;
+}
+
+.element-name-descr {
+  font-size: 13px;
 }
 
 /* ----- About ------- */
