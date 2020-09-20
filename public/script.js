@@ -1,13 +1,13 @@
 // --------- BODY ----------------
-window.addEventListener("scroll", (e) => {
-  const titleAbout = document.querySelector(".title-about");
-  const barAbout = document.querySelector(".bar-about");
-  const leftSide = document.querySelector(".left-side");
-  const rightSide = document.querySelector(".right-side");
-  const titleProjects = document.querySelector(".title-projects");
-  const barProjects = document.querySelector(".bar-projects");
-  const projectsContainer = document.querySelector(".projects-container");
+const titleAbout = document.querySelector(".title-about");
+const barAbout = document.querySelector(".bar-about");
+const leftSide = document.querySelector(".left-side");
+const rightSide = document.querySelector(".right-side");
+const titleProjects = document.querySelector(".title-projects");
+const barProjects = document.querySelector(".bar-projects");
+const projectsContainer = document.querySelector(".projects-container");
 
+window.addEventListener("scroll", (e) => {
   // ABOUT = scrollY === 541
   if (window.scrollY > 540) {
     titleAbout.classList.add("title-about-animated");
@@ -26,6 +26,21 @@ window.addEventListener("scroll", (e) => {
 
   console.log(window.scrollY);
 });
+
+// const x = window.matchMedia("(max-width: 320px)");
+// // console.log(x);
+
+// if (x.matches) {
+//   // If media query matches
+//   if (window.scrollY > 20) {
+//     titleAbout.classList.add("title-about-animated");
+//     barAbout.classList.add("bar-about-animated");
+//     leftSide.classList.add("left-side-animated");
+//     rightSide.classList.add("right-side-animated");
+//   }
+// } else {
+//   console.log("a");
+// }
 // --------- BODY ----------------
 
 // --------- HEADER ----------------

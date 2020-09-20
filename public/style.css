@@ -629,6 +629,10 @@ nav {
     display: none;
   }
 
+  .title-about {
+    transform: translateX(0);
+  }
+
   .title-section {
     margin-top: 35px;
     font-size: 35px;
@@ -636,10 +640,12 @@ nav {
 
   .about {
     padding-bottom: 0;
+    height: 1200px;
   }
 
   .bar-about {
     margin-bottom: 0;
+    transform: translateX(0);
   }
 
   .about-container {
@@ -649,6 +655,7 @@ nav {
   .left-side {
     height: 500px;
     margin-left: 0;
+    transform: translateX(0);
   }
 
   .about-img-front {
@@ -664,6 +671,10 @@ nav {
 
   .left-side p {
     padding: 10px;
+  }
+
+  .right-side {
+    transform: translateX(0);
   }
 
   .folders-container,
@@ -682,11 +693,20 @@ nav {
   }
 
   .projects {
-    height: auto;
+    height: 1500px;
+  }
+
+  .title-projects {
+    transform: translateX(0);
+  }
+
+  .bar-projects {
+    transform: translateX(0);
   }
 
   .projects-container {
     grid-template-columns: 1fr;
+    transform: translateX(0);
   }
 
   .logo-wrapper img {
