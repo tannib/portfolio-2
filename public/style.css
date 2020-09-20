@@ -26,6 +26,7 @@ html {
   height: 4px;
   margin: 15px 0 50px 0;
   width: 70px;
+  font-size: 3px;
 }
 
 /* header,
@@ -146,11 +147,12 @@ nav {
 .about {
   background-color: #fff;
   color: #616161;
-  height: 800px;
+  /* height: 800px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  padding-bottom: 80px;
 }
 
 .title-about {
@@ -235,7 +237,6 @@ nav {
 }
 
 .right-side {
-  /* background-color: blue; */
   padding: 20px;
   display: flex;
   align-items: center;
@@ -392,7 +393,6 @@ nav {
   color: #fff;
   opacity: 0;
   transform: translateX(-200px);
-  /* transition-delay: 1s; */
   transition: all 1s ease-in-out;
 }
 
@@ -473,7 +473,7 @@ nav {
   width: 40%;
 }
 
-#logo-img-whatsapp {
+#logo-img-amazon {
   width: 30%;
 }
 
@@ -514,3 +514,215 @@ nav {
 }
 
 /* ----- Projects ------- */
+
+/* ----- Media Queries ------- */
+@media (max-width: 768px) {
+  h1,
+  h2 {
+    font-size: 35px;
+  }
+
+  .randomColor {
+    font-size: 13px;
+    padding: 0;
+    left: 10px;
+  }
+
+  .randomColor span {
+    cursor: default;
+    font-weight: 600;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 0;
+    border-radius: 0;
+    margin-left: 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .title-section {
+    margin-top: 50px;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .left-side {
+    height: 500px;
+    margin-left: 0;
+  }
+
+  .left-side p {
+    padding: 20px 80px;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .logo-wrapper img {
+    width: 85%;
+  }
+
+  #logo-img-natours,
+  #logo-img-js {
+    width: 60%;
+  }
+
+  #logo-img-airbnb {
+    width: 100%;
+  }
+
+  #logo-img-amazon {
+    width: 50%;
+  }
+
+  .portfolio-img-background {
+    filter: brightness(30%);
+  }
+
+  .subtitle {
+    opacity: 1;
+    font-size: 12px;
+    padding: 0 20px;
+  }
+
+  .github-logo {
+    opacity: 1;
+    top: 15px;
+    right: 15px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  header,
+  .about {
+    border-bottom: 8px solid #04c2c9;
+  }
+
+  h1,
+  h2 {
+    font-size: 20px;
+  }
+
+  .btn p {
+    font-size: 13px;
+  }
+
+  .randomColor {
+    padding: 0 10px;
+  }
+
+  .randomColor span {
+    cursor: default;
+    font-weight: 600;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 0;
+    border-radius: 0;
+    margin-left: 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  nav {
+    display: none;
+  }
+
+  .title-section {
+    margin-top: 35px;
+    font-size: 35px;
+  }
+
+  .about {
+    padding-bottom: 0;
+  }
+
+  .bar-about {
+    margin-bottom: 0;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .left-side {
+    height: 500px;
+    margin-left: 0;
+  }
+
+  .about-img-front {
+    width: 85%;
+  }
+
+  .about-img-retro {
+    width: 40%;
+    height: 65%;
+    left: 40%;
+    bottom: 100px;
+  }
+
+  .left-side p {
+    padding: 10px;
+  }
+
+  .folders-container,
+  .folders-container-open-folder {
+    width: 270px;
+    border-spacing: 5px;
+  }
+
+  .folder-wrap-open-folder {
+    margin-left: 27px;
+  }
+
+  .folder {
+    width: 95px;
+    height: 95px;
+  }
+
+  .projects {
+    height: auto;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-wrapper img {
+    width: 85%;
+  }
+
+  #logo-img-natours,
+  #logo-img-js {
+    width: 60%;
+  }
+
+  #logo-img-airbnb {
+    width: 100%;
+  }
+
+  #logo-img-amazon {
+    width: 50%;
+  }
+
+  .portfolio-img-background {
+    height: 240px;
+    filter: brightness(30%);
+  }
+
+  .subtitle {
+    opacity: 1;
+    font-size: 12px;
+    padding: 0 20px;
+  }
+
+  .github-logo {
+    opacity: 1;
+    top: 15px;
+    right: 15px;
+    height: 30px;
+  }
+}
+
+/* ----- Media Queries ------- */
