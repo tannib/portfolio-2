@@ -1,3 +1,33 @@
+// --------- BODY ----------------
+window.addEventListener("scroll", (e) => {
+  const titleAbout = document.querySelector(".title-about");
+  const barAbout = document.querySelector(".bar-about");
+  const leftSide = document.querySelector(".left-side");
+  const rightSide = document.querySelector(".right-side");
+  const titleProjects = document.querySelector(".title-projects");
+  const barProjects = document.querySelector(".bar-projects");
+  const projectsContainer = document.querySelector(".projects-container");
+
+  // ABOUT = scrollY === 541
+  if (window.scrollY > 540) {
+    titleAbout.classList.add("title-about-animated");
+    barAbout.classList.add("bar-about-animated");
+    leftSide.classList.add("left-side-animated");
+    rightSide.classList.add("right-side-animated");
+  }
+
+  // PROJECTS = scrollY === 1361
+  if (window.scrollY > 1360) {
+    titleProjects.classList.add("title-projects-animated");
+    barProjects.classList.add("bar-projects-animated");
+    console.log(projectsContainer);
+    projectsContainer.classList.add("projects-container-animated");
+  }
+
+  console.log(window.scrollY);
+});
+// --------- BODY ----------------
+
 // --------- HEADER ----------------
 
 const header = document.querySelector("header");

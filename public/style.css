@@ -136,9 +136,6 @@ nav {
   color: #e31b6d;
 }
 
-.link-wrap .active {
-}
-
 .page-link:not(:last-child) {
   margin-right: 40px;
 }
@@ -156,9 +153,28 @@ nav {
   padding: 10px;
 }
 
-.about .title-section,
-.about .title-bar {
+.title-about {
   color: #444649;
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: all 0.5s ease-in-out;
+}
+
+.title-about-animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.bar-about {
+  background-color: #444649;
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: all 0.5s ease-in-out;
+}
+
+.bar-about-animated {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .about-container {
@@ -175,6 +191,14 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: all 0.5s ease-in-out;
+}
+
+.left-side-animated {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .container-img {
@@ -216,6 +240,14 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  transform: translateX(200px);
+  transition: all 0.5s ease-in-out;
+}
+
+.right-side-animated {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .folders-container {
@@ -356,9 +388,29 @@ nav {
   padding: 40px 10px 160px 10px;
 }
 
-.projects .title-section,
-.projects .title-bar {
+.title-projects {
   color: #fff;
+  opacity: 0;
+  transform: translateX(-200px);
+  /* transition-delay: 1s; */
+  transition: all 1s ease-in-out;
+}
+
+.title-projects-animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.bar-projects {
+  background-color: #fff;
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: all 1s ease-in-out;
+}
+
+.bar-projects-animated {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .projects-container {
@@ -367,6 +419,14 @@ nav {
   margin: 0 50px;
   height: 100%;
   width: 80%;
+  opacity: 0;
+  transform: translateX(200px);
+  transition: all 1s ease-in-out;
+}
+
+.projects-container-animated {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .portfolio-item-wrapper {
