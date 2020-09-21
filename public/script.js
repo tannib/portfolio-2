@@ -1,4 +1,6 @@
 // --------- BODY ----------------
+
+// Displaying animated elements
 const titleAbout = document.querySelector(".title-about");
 const barAbout = document.querySelector(".bar-about");
 const leftSide = document.querySelector(".left-side");
@@ -64,7 +66,10 @@ changeColor.addEventListener("click", () => {
 });
 
 const headerBtn = document.getElementById("headerBtn");
-headerBtn.addEventListener("click", () => portfolioSection.scrollIntoView());
+headerBtn.addEventListener("click", () => {
+  console.log("hello");
+  portfolioSection.scrollIntoView({ block: "start", behavior: "smooth" });
+});
 
 // --------- HEADER ----------------
 

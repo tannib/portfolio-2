@@ -417,7 +417,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 50px;
-  height: 100%;
+  height: 604px;
   width: 80%;
   opacity: 0;
   transform: translateX(200px);
@@ -431,7 +431,7 @@ nav {
 
 .portfolio-item-wrapper {
   position: relative;
-  height: 100%;
+  height: 302px;
 }
 
 .portfolio-item-wrapper:hover .portfolio-img-background {
@@ -499,7 +499,7 @@ nav {
   color: lightseagreen;
   position: absolute;
   bottom: 20px;
-  padding: 20px 80px;
+  padding: 20px;
   opacity: 0;
 }
 
@@ -558,6 +558,10 @@ nav {
 
   .projects-container {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .portfolio-item-wrapper {
+    height: 240px;
   }
 
   .logo-wrapper img {
@@ -707,6 +711,7 @@ nav {
   .projects-container {
     grid-template-columns: 1fr;
     transform: translateX(0);
+    height: 1440px;
   }
 
   .logo-wrapper img {
