@@ -92,6 +92,7 @@ h2 {
   position: absolute;
   bottom: 20px;
   left: 20px;
+  font-size: 15px;
 }
 
 .randomColor span {
@@ -523,8 +524,8 @@ nav {
   }
 
   .randomColor {
-    font-size: 13px;
-    padding: 0;
+    /* font-size: 15px;  */
+    padding: 0 10px;
     left: 10px;
   }
 
