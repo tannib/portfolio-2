@@ -67,7 +67,7 @@ const contactBtn = document.getElementById("contactBtn");
 const homeSection = document.getElementById("home");
 const aboutSection = document.getElementById("about");
 const portfolioSection = document.getElementById("portfolio");
-// const contactSection = document.getElementById("contact");
+const contactSection = document.getElementById("contact");
 
 homeBtn.addEventListener("click", () =>
   homeSection.scrollIntoView({ block: "start", behavior: "smooth" })
@@ -77,6 +77,9 @@ aboutBtn.addEventListener("click", () =>
 );
 portfolioBtn.addEventListener("click", () =>
   portfolioSection.scrollIntoView({ block: "start", behavior: "smooth" })
+);
+contactBtn.addEventListener("click", () =>
+  contactSection.scrollIntoView({ block: "start", behavior: "smooth" })
 );
 
 // --------- NAV ----------------
