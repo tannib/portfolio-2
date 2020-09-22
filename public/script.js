@@ -22,27 +22,12 @@ window.addEventListener("scroll", (e) => {
   if (window.scrollY > 1360) {
     titleProjects.classList.add("title-projects-animated");
     barProjects.classList.add("bar-projects-animated");
-    console.log(projectsContainer);
     projectsContainer.classList.add("projects-container-animated");
   }
 
   console.log(window.scrollY);
 });
 
-// const x = window.matchMedia("(max-width: 320px)");
-// // console.log(x);
-
-// if (x.matches) {
-//   // If media query matches
-//   if (window.scrollY > 20) {
-//     titleAbout.classList.add("title-about-animated");
-//     barAbout.classList.add("bar-about-animated");
-//     leftSide.classList.add("left-side-animated");
-//     rightSide.classList.add("right-side-animated");
-//   }
-// } else {
-//   console.log("a");
-// }
 // --------- BODY ----------------
 
 // --------- HEADER ----------------
@@ -84,31 +69,19 @@ const aboutSection = document.getElementById("about");
 const portfolioSection = document.getElementById("portfolio");
 // const contactSection = document.getElementById("contact");
 
-homeBtn.addEventListener("click", () => homeSection.scrollIntoView());
-aboutBtn.addEventListener("click", () => aboutSection.scrollIntoView());
-portfolioBtn.addEventListener("click", () => portfolioSection.scrollIntoView());
+homeBtn.addEventListener("click", () =>
+  homeSection.scrollIntoView({ block: "start", behavior: "smooth" })
+);
+aboutBtn.addEventListener("click", () =>
+  aboutSection.scrollIntoView({ block: "start", behavior: "smooth" })
+);
+portfolioBtn.addEventListener("click", () =>
+  portfolioSection.scrollIntoView({ block: "start", behavior: "smooth" })
+);
 
 // --------- NAV ----------------
 
 // --------- ABOUT ----------------
-
-// const containerImage = document.querySelector(".container-img");
-// const frontImage = document.querySelector(".about-img-front");
-// const retroImage = document.querySelector(".about-img-retro");
-// containerImage.addEventListener("mousemove", (e) => {
-//   const newY = e.offsetY / 10;
-//   const newX = e.offsetX / 10;
-
-//   if (e.offsetX > 350 && e.offsetX < 569) {
-//     frontImage.style.left = `${newX}%`;
-//   }
-//   if (e.offsetY > 150 && e.offsetY < 349) {
-//     frontImage.style.bottom = `${newY}px`;
-//   }
-
-//   // console.log(e.offsetX);
-//   console.log(e.offsetY);
-// });
 
 // Changing style to the folder name on hovering
 const folders = document.querySelectorAll(".folder");
