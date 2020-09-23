@@ -93,9 +93,9 @@ portfolioBtn.addEventListener("click", () =>
 contactBtn.addEventListener("click", () =>
   contactSection.scrollIntoView({ block: "start", behavior: "smooth" })
 );
-contactBtn2.addEventListener("click", () =>
-  contactSection.scrollIntoView({ block: "start", behavior: "smooth" })
-);
+// contactBtn2.addEventListener("click", () =>
+//   contactSection.scrollIntoView({ block: "start", behavior: "smooth" })
+// );
 
 // --------- NAV ----------------
 
