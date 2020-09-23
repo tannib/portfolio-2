@@ -39,16 +39,16 @@
             <img src="./img/about-window.png" alt="" class="about-img-retro" />
           </div>
           <p>
-            Milanese born and breed since 1991. <br />
+            Milanese born and bred since 1991. <br />
             Economics graduated & coders bootcamper (is that even a word?).
             <br />
-            Sports and live music fanatics, former journalist and project
+            Sports and live music fanatic, former journalist and project
             manager. <br />
             Now coder 24/7. You're probably wondering what The5Game is, right?
             <br />
-            Contact me and you'll find out.
-
-            <!--  I guess you wanna know what The5Game is, right? -->
+            <span class="contactBtn-2" id="contactBtn-2"
+              >Contact me and you'll find out.</span
+            >
           </p>
         </div>
         <div class="right-side">
@@ -153,11 +153,55 @@
               <div class="folder-name">Prev Experience</div>
             </div>
             <div class="folder-wrap">
-              <div class="folder"></div>
+              <div class="folder">
+                <div class="inside-folder-wrap">
+                  <div class="element">
+                    <img
+                      class="sports-gif"
+                      src="./img/logos/sports.gif"
+                      alt=""
+                    />
+                  </div>
+                  <div class="element-name">Sports</div>
+                </div>
+                <div class="inside-folder-wrap">
+                  <div class="element">
+                    <img src="./img/logos/spotify.png" alt="" />
+                  </div>
+                  <div class="element-name">Music</div>
+                </div>
+                <div class="inside-folder-wrap">
+                  <div class="element">
+                    <img src="./img/logos/excel.png" alt="" />
+                  </div>
+                  <div class="element-name">Stats</div>
+                </div>
+                <div class="inside-folder-wrap">
+                  <div class="element">
+                    <img src="./img/logos/movies.png" alt="" />
+                  </div>
+                  <div class="element-name">Movies</div>
+                </div>
+              </div>
               <div class="folder-name">Passion</div>
             </div>
             <div class="folder-wrap">
-              <div class="folder"></div>
+              <div class="folder folder-the5game">
+                <img
+                  class="the5game-icon"
+                  src="./img/logos/the5game.png"
+                  alt=""
+                  srcset=""
+                />
+                <p class="the5game-text">
+                  I had the idea of a daily multisport platform in the summer of
+                  2019. Since then I've built the business model, coded the beta
+                  version of the frontend, wrote the algorithms, set a deal with
+                  a US provider for the live stats feed, designed all the
+                  mockups and graphics element and found an agency to develop
+                  the backend.
+                </p>
+              </div>
               <div class="folder-name">The5Game</div>
             </div>
           </div>
@@ -328,14 +372,43 @@
       <div class="title-section title-contact">Contact</div>
       <div class="title-bar bar-contact">'</div>
       <div class="contact-container">
-        <h2>Let's work together!</h2>
-        <p class="links">You can find my resume here or here.</p>
-        <p class="inquiries">
-          For business inquiries please contact me on E-mail (preferred):
-          giovanni.benveniste@gmail.com or phone: +39 333 136 96 36.
-        </p>
+        <div class="contact-left">
+          <h2>Let's work together!</h2>
+          <div class="links">
+            <p>You can find my resume</p>
+            <div class="link link-1" id="link-1">
+              <a href="./documents/curriculum_vitae.pdf">
+                <p>here</p>
+                <img src="./img/logos/cv.png" alt="" />
+              </a>
+            </div>
+            <p>or</p>
+            <div class="link link-2" id="link-2">
+              <a
+                href="https://www.linkedin.com/in/giovanni-benveniste-764447115/"
+              >
+                <p>here</p>
+                <img src="./img/logos/linkedin.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <p class="inquiries">
+            For business inquiries please contact me on E-mail:
+            <a href="mailto: giovanni.benveniste@gmail.com"
+              >giovanni.benveniste@gmail.com</a
+            >
+            or phone: +39 333 136 96 36.
+          </p>
+        </div>
+        <div class="contact-right">
+          <img src="./img/contact.png" alt="" />
+        </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <p>GIOVANNI BENVENISTE ©2020</p>
+    </footer>
     <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     <script src="script.js"></script>
   </body>

@@ -29,11 +29,6 @@ html {
   font-size: 3px;
 }
 
-/* header,
-section {
-  scroll-snap-align: start;
-} */
-
 /* ----- General ------- */
 
 /* ----- Header ------- */
@@ -237,6 +232,11 @@ nav {
   text-align: center;
 }
 
+.contactBtn-2 {
+  cursor: pointer;
+  font-weight: 500;
+}
+
 .right-side {
   padding: 20px;
   display: flex;
@@ -375,6 +375,41 @@ nav {
 
 .element-name-descr {
   font-size: 13px;
+}
+
+.sports-gif {
+  transform: scale(1.15);
+}
+
+.folder-the5game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.folder-the5game-open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.the5game-icon {
+  width: 80%;
+}
+
+.the5game-icon-open {
+  width: 70%;
+}
+
+.the5game-text {
+  display: none;
+}
+
+.the5game-text-open {
+  display: inline-block;
+  padding: 5px 20px;
+  color: #fff;
 }
 
 /* ----- About ------- */
@@ -516,7 +551,157 @@ nav {
 
 /* ----- Projects ------- */
 
+/* ----- Contact ------- */
+.contact {
+  background-color: #ddd;
+  color: #252525;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 80px;
+}
+
+.title-contact {
+  color: #252525;
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: all 0.5s ease-in-out;
+}
+
+.title-contact-animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.bar-contact {
+  background-color: #252525;
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: all 0.5s ease-in-out;
+}
+
+.bar-contact-animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 30px;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.contact-left {
+  padding: 0 50px;
+  margin-left: 30px;
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-left-animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.contact-container h2 {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #000;
+  transform: skewX(-2deg);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  margin: 0 10px;
+  padding: 10px;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+.link:hover {
+  transform: scale(1.08);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+.link:hover a p {
+  color: #000;
+}
+
+.link a {
+  text-decoration: none;
+}
+
+.link a img {
+  width: 100%;
+}
+
+.link a p {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #252525;
+  transition: all 0.3s;
+}
+
+.inquiries a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #252525;
+}
+.contact-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateX(200px);
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-right-animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.contact-right img {
+  width: 50%;
+  transition: all 0.3s;
+}
+
+/* ----- Contact ------- */
+
+/* ----- Footer ------- */
+
+.footer {
+  background-color: #252934;
+  /* height: 800px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  color: #e31b6d;
+}
+/* ----- Footer ------- */
+
 /* ----- Media Queries ------- */
+
 @media (max-width: 768px) {
   h1,
   h2 {
@@ -597,6 +782,27 @@ nav {
     top: 15px;
     right: 15px;
     height: 30px;
+  }
+
+  .contact {
+    height: auto;
+  }
+
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 0;
+    /* margin-bottom: 20px; */
+  }
+
+  .contact-left {
+    padding: 0;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .contact-left h2 {
+    text-align: center;
   }
 }
 
@@ -748,6 +954,21 @@ nav {
     top: 15px;
     right: 15px;
     height: 30px;
+  }
+
+  .contact {
+    height: 750px;
+  }
+
+  .contact-container {
+    padding: 0;
+  }
+
+  .title-contact,
+  .bar-contact,
+  .contact-left,
+  .contact-right {
+    transform: translateX(0);
   }
 }
 

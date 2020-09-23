@@ -8,6 +8,10 @@ const rightSide = document.querySelector(".right-side");
 const titleProjects = document.querySelector(".title-projects");
 const barProjects = document.querySelector(".bar-projects");
 const projectsContainer = document.querySelector(".projects-container");
+const titleContact = document.querySelector(".title-contact");
+const barContact = document.querySelector(".bar-contact");
+const contactLeftSide = document.querySelector(".contact-left");
+const contactRightSide = document.querySelector(".contact-right");
 
 window.addEventListener("scroll", (e) => {
   // ABOUT = scrollY === 541
@@ -25,7 +29,15 @@ window.addEventListener("scroll", (e) => {
     projectsContainer.classList.add("projects-container-animated");
   }
 
-  console.log(window.scrollY);
+  // CONTACT = scrollY === 2303
+  if (window.scrollY > 2300) {
+    titleContact.classList.add("title-contact-animated");
+    barContact.classList.add("bar-contact-animated");
+    contactLeftSide.classList.add("contact-left-animated");
+    contactRightSide.classList.add("contact-right-animated");
+  }
+
+  // console.log(window.scrollY);
 });
 
 // --------- BODY ----------------
@@ -52,7 +64,6 @@ changeColor.addEventListener("click", () => {
 
 const headerBtn = document.getElementById("headerBtn");
 headerBtn.addEventListener("click", () => {
-  console.log("hello");
   portfolioSection.scrollIntoView({ block: "start", behavior: "smooth" });
 });
 
@@ -64,6 +75,7 @@ const homeBtn = document.getElementById("homeBtn");
 const aboutBtn = document.getElementById("aboutBtn");
 const portfolioBtn = document.getElementById("portfolioBtn");
 const contactBtn = document.getElementById("contactBtn");
+const contactBtn2 = document.getElementById("contactBtn-2");
 const homeSection = document.getElementById("home");
 const aboutSection = document.getElementById("about");
 const portfolioSection = document.getElementById("portfolio");
@@ -79,6 +91,9 @@ portfolioBtn.addEventListener("click", () =>
   portfolioSection.scrollIntoView({ block: "start", behavior: "smooth" })
 );
 contactBtn.addEventListener("click", () =>
+  contactSection.scrollIntoView({ block: "start", behavior: "smooth" })
+);
+contactBtn2.addEventListener("click", () =>
   contactSection.scrollIntoView({ block: "start", behavior: "smooth" })
 );
 
@@ -100,6 +115,8 @@ folders.forEach((folder) => {
     folder.parentElement.children[1].classList.remove("folder-name-hover");
   });
 });
+
+const folderThe5Game = document.querySelector(".folder-the5game");
 
 // Changing the style of the right side of the About section by OPENING one folder
 const openFolder = (e) => {
@@ -143,6 +160,28 @@ const openFolder = (e) => {
       element.classList.remove("element-name");
       element.classList.add("element-name-open-folder");
     });
+
+    if (folderThe5Game.classList.contains("folder-open-folder")) {
+      document
+        .querySelector(".folder-the5game")
+        .classList.add("folder-the5game-open");
+      console.log(document.querySelector(".folder-the5game").classList);
+      document
+        .querySelector(".folder-the5game-open")
+        .classList.remove("folder-the5game");
+      document
+        .querySelector(".the5game-icon")
+        .classList.add("the5game-icon-open");
+      document
+        .querySelector(".the5game-icon-open")
+        .classList.remove("the5game-icon");
+      document
+        .querySelector(".the5game-text")
+        .classList.add("the5game-text-open");
+      document
+        .querySelector(".the5game-text-open")
+        .classList.remove("the5game-text");
+    }
   }
 };
 
@@ -204,6 +243,27 @@ const closeFolder = (e) => {
     document
       .querySelector(".folders-container-open-folder")
       .classList.remove("folders-container-open-folder");
+
+    if (!folderThe5Game.classList.contains("folder-open-folder")) {
+      document
+        .querySelector(".folder-the5game-open")
+        .classList.add("folder-the5game");
+      document
+        .querySelector(".folder-the5game")
+        .classList.remove("folder-the5game-open");
+      document
+        .querySelector(".the5game-icon-open")
+        .classList.add("the5game-icon");
+      document
+        .querySelector(".the5game-icon")
+        .classList.remove("the5game-icon-open");
+      document
+        .querySelector(".the5game-text-open")
+        .classList.add("the5game-text");
+      document
+        .querySelector(".the5game-text")
+        .classList.remove("the5game-text-open");
+    }
   } else {
     return true;
   }
